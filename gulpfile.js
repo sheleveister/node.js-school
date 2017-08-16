@@ -3,6 +3,8 @@
 const gulp = require('gulp');
 const sass = require('gulp-sass');
 const browserSync = require('browser-sync');
+const cssmin = require('gulp-cssmin');
+
 
 gulp.task('server', function () {
   return browserSync.init({
@@ -15,6 +17,7 @@ gulp.task('server', function () {
 gulp.task('sass', function () {
   return gulp.src('./source/styles/*.scss')
     .pipe(sass().on('error', sass.logError))
+    .pipe(cssmin())
     .pipe(gulp.dest('./'))
     .pipe(browserSync.stream());
 });

@@ -49,6 +49,10 @@ body {
       cursor: pointer;
       background-color: #fc0;
     }
+    &:disabled {
+      background-color: #ccc;
+      color: #000;
+    }
   }
 
   &__label {
