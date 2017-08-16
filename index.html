@@ -1,0 +1,40 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport"
+        content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Node.JS School</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div id="resultContainer">
+  
+  <form id="myForm" class="form-container">
+    <label class="form-container-label">
+      <span class="form-container__label">ФИО</span>
+      <input type="text" placeholder="Иванов Иван Иванович" class="form-container__name">
+    </label>
+  
+    <label class="form-container-label">
+      <span class="form-container__label">Email</span>
+      <input type="email" name="email" placeholder="mail@yandex.ru" class="form-container__email">
+      <span class="form-container__format">Введите почту в доменах ya.ru, yandex.ru, yandex.ua, yandex.by, yandex.kz, yandex.com </span>
+    </label>
+  
+    <label class="form-container-label">
+      <span class="form-container__label">Телефон</span>
+      <input type="tel" name="phone" placeholder="+7(999)999-99-99" class="form-container__phone">
+      <span class="form-container__format">Введите телефон с +7</span>
+    </label>
+    
+    <button id="submitButton" class="form-container__submit" type="submit">Отправить</button>
+  </form>
+  
+</div>
+
+<script src="main.js"></script>
+</body>
+</html>
